@@ -3,7 +3,7 @@
 * Студент: [Юлия Рушай](https://up.htmlacademy.ru/htmlcss/14/user/144822).
 * Наставник: `Неизвестно`.
 
----
+Без наставника
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitignore`, `Contributing.md`, `Readme.md`._
