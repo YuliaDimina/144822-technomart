@@ -1,5 +1,6 @@
 Папка для шрифтов.
-
+font-family: 'PT Sans', sans-serif;
+font-family: 'Cuprum', sans-serif;
 --
 
 В макете используются шрифты Cuprum и PT Sans.
