@@ -303,72 +303,24 @@ li {
     animation: shake 0.6s;
 }
 
-@-webkit-keyframes bounce {
-    0% {
-        -webkit-transform: translateY(-2000px);
-        transform: translateY(-2000px);
-    }
-    70% {
-        -webkit-transform: translateY(30px);
-        transform: translateY(30px);
-    }
-    90% {
-        -webkit-transform: translateY(-10px);
-        transform: translateY(-10px);
-    }
-    100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-}
-
 @keyframes bounce {
     0% {
-        -webkit-transform: translateY(-2000px);
         transform: translateY(-2000px);
     }
     70% {
-        -webkit-transform: translateY(30px);
         transform: translateY(30px);
     }
     90% {
-        -webkit-transform: translateY(-10px);
         transform: translateY(-10px);
     }
     100% {
-        -webkit-transform: translateY(0);
         transform: translateY(0);
-    }
-}
-
-@-webkit-keyframes shake {
-    0%,
-    100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        background-color: #ffeaeb;
-    }
-    10%,
-    30%,
-    50%,
-    70%,
-    90% {
-        -webkit-transform: translateX(-10px);
-        transform: translateX(-10px);
-    }
-    20%,
-    40%,
-    60%,
-    80% {
-        -webkit-transform: translateX(10px);
-        transform: translateX(10px);
     }
 }
 
 @keyframes shake {
     0%,
     100% {
-        -webkit-transform: translateX(0);
         transform: translateX(0);
         background-color: #ffeaeb;
     }
@@ -377,14 +329,12 @@ li {
     50%,
     70%,
     90% {
-        -webkit-transform: translateX(-10px);
         transform: translateX(-10px);
     }
     20%,
     40%,
     60%,
     80% {
-        -webkit-transform: translateX(10px);
         transform: translateX(10px);
     }
 }
@@ -801,7 +751,7 @@ li {
 
 .assortment__card_yellow {
     background-color: #f6b22d;
-    background-image: url(../../img/bg-mat.png);
+    background-image: url(../img/bg-mat.png);
     background-repeat: no-repeat;
     background-position: 213px center;
 }
@@ -876,7 +826,7 @@ li {
 .assortment__slider {
     position: relative;
     width: 100%;
-    background-image: url(../../img/bg-slider.png);
+    background-image: url(../img/bg-slider.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -1079,7 +1029,7 @@ li {
     height: 272px;
     right: 0;
     top: -45px;
-    background-image: url(../../img/menu-shadow.png);
+    background-image: url(../img/menu-shadow.png);
 }
 
 .services__menu-item {
@@ -1108,13 +1058,13 @@ li {
 
 .services__menu-modal_delivery {
     display: none;
-    background-image: url(../../img/delivery.png);
+    background-image: url(../img/delivery.png);
 }
 
 .services__menu-modal_waranty {
     background-position: 311px 0px;
     display: none;
-    background-image: url(../../img/waranty.png);
+    background-image: url(../img/waranty.png);
 }
 
 .services__menu-modal_waranty .services__menu-description {
@@ -1124,7 +1074,7 @@ li {
 .services__menu-modal_credit {
     background-position: 231px 0px;
     display: none;
-    background-image: url(../../img/kredit.png);
+    background-image: url(../img/kredit.png);
 }
 
 .credit__btn {
@@ -1252,7 +1202,7 @@ li {
     width: 300px;
     height: 157px;
     margin-bottom: 40px;
-    background-image: url(../../img/mini-map.png);
+    background-image: url(../img/mini-map.png);
 }
 
 .about-company__contacts-btn {
