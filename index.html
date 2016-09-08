@@ -4,13 +4,15 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="css/normalize.min.css">
     <link href="css/style.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.min.css">
 </head>
 
 <body>
+    <!--   через класс не работает, дает дырку на странице http://floomby.ru/s2/GgqSUj/full/, в Академии предупреждали и советовали скрывать инлайново-->
+    <!--    на счет картинок не понимаю - у себя проверяю через локальный просмотр бракетса и через локалхост гранта - все картинки на месте, через git add они тоже все добавлены, как так не видно ума не приложу чего делать-->
     <svg style="display: none">
         <symbol viewBox="0 0 44 65" id="bg1">
             <title>bg1</title>
@@ -84,7 +86,7 @@
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use>
                         </svg>
                     </a>
-                    <input type="search" name="text-search" id="text-search" placeholder="Поиск:">
+                    <input type="search" class="text-search" name="text-search" id="text-search" placeholder="Поиск:">
                 </form>
                 <a class="header__bookmarks" href="#">
                     <svg width="13" height="17">
@@ -175,7 +177,7 @@
                 <div class="products-summary__popular-products">
                     <div class="products-summary__popular-product catalog__item">
                         <div class="catalog__item-picture">
-                            <img src="img/item1.png" alt="">
+                            <img src="img/item1.png" alt="перфоратор" width="184" height="112">
                             <a href="#" class="catalog__item-btn btn btn-green btn-green-underline">
                                 <svg width="17" height="17">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shopping-cart-black-shape"></use>
@@ -191,7 +193,7 @@
                     </div>
                     <div class="products-summary__popular-product catalog__item">
                         <div class="catalog__item-picture">
-                            <img src="img/item2.png" alt="" class="catalog__item-picture">
+                            <img src="img/item2.png" alt="перфоратор" class="catalog__item-picture" width="127" height="112">
                             <a href="#" class="catalog__item-btn btn btn-green btn-green-underline">
                                 <svg width="17" height="17">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shopping-cart-black-shape"></use>
@@ -207,7 +209,7 @@
                     </div>
                     <div class="products-summary__popular-product catalog__item">
                         <div class="catalog__item-picture">
-                            <img src="img/item3.png" alt="" class="catalog__item-picture">
+                            <img src="img/item3.png" alt="перфоратор" class="catalog__item-picture" width="144" height="128">
                             <a href="#" class="catalog__item-btn btn btn-green btn-green-underline">
                                 <svg width="17" height="17">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shopping-cart-black-shape"></use>
@@ -223,7 +225,7 @@
                     </div>
                     <div class="products-summary__popular-product catalog__item label-new">
                         <div class="catalog__item-picture">
-                            <img src="img/item4.png" alt="" class="catalog__item-picture">
+                            <img src="img/item4.png" alt="перфоратор" class="catalog__item-picture" width="127" height="112">
                             <a href="#" class="catalog__item-btn btn btn-green btn-green-underline">
                                 <svg width="17" height="17">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shopping-cart-black-shape"></use>
@@ -243,36 +245,31 @@
                     <a class="products-summary__btn products-summary__btn_mnf btn-red btn">все производители</a>
                 </div>
                 <div class="products-summary__manufacturers">
-
                     <div class="products-summary__manufacturers-card">
-                        <img alt="производитель" src="img/bosch.png">
-                    </div>
-
-
-                    <div class="products-summary__manufacturers-card">
-                        <img alt="производитель" src="img/Makita.png">
+                        <img alt="производитель" src="img/bosch.png" width="127" height="37">
                     </div>
                     <div class="products-summary__manufacturers-card">
-                        <img alt="производитель" src="img/DeWALT.png">
+                        <img alt="производитель" src="img/makita.png" width="123" height="40">
                     </div>
                     <div class="products-summary__manufacturers-card">
-                        <img alt="производитель" src="img/interscol.png">
+                        <img alt="производитель" src="img/dewalt.png" width="146" height="44">
                     </div>
-
                     <div class="products-summary__manufacturers-card">
-                        <img alt="производитель" src="img/Hitachi.png">
+                        <img alt="производитель" src="img/interscol.png" width="200" height="88">
                     </div>
-
                     <div class="products-summary__manufacturers-card">
-                        <img alt="производитель" src="img/LG.png">
+                        <img alt="производитель" src="img/hitachi.png" width="169" height="31">
+                    </div>
+                    <div class="products-summary__manufacturers-card">
+                        <img alt="производитель" src="img/lg.png" width="121" height="73">
                     </div>
 
                     <div class="products-summary__manufacturers-card">
-                        <img alt="производитель" src="img/AEG.png">
+                        <img alt="производитель" src="img/aeg.png" width="141" height="96">
                     </div>
 
                     <div class="products-summary__manufacturers-card">
-                        <img alt="производитель" src="img/Metabo.png">
+                        <img alt="производитель" src="img/metabo.png" width="204" height="69">
                     </div>
                 </div>
             </section>
@@ -327,7 +324,7 @@
                     <h2 class="about-company__contacts-title">Контакты</h2>
                     <p class="about-company__contacts-slogan">Вы можете забрать товар сами, заехав в наш офис:</p>
                     <div id="map"></div>
-                    <a href="#" class="about-company__contacts-btn btn btn-red letter-button">заблудились? напишите нам!</a>
+                    <a href="form.html" class="about-company__contacts-btn btn btn-red letter-button">заблудились? напишите нам!</a>
                 </div>
             </div>
         </section>
@@ -405,7 +402,8 @@
             </form>
         </div>
     </footer>
-    <script src="js/main.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>

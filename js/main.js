@@ -66,3 +66,127 @@ function clearTabs() {
         }
     });
 })()
+
+
+//=====Гугл-карта=====
+
+
+google.maps.event.addDomListener(window, 'load', init);
+
+function init() {
+
+    var mapOptions = {
+
+        zoom: 13,
+
+        center: new google.maps.LatLng(59.9387942, 30.323083300000008),
+
+        styles: [{
+            "featureType": "all",
+            "elementType": "labels.text",
+            "stylers": [{
+                "weight": "1.00"
+            }]
+        }, {
+            "featureType": "all",
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "color": "#ff0000"
+            }, {
+                "visibility": "off"
+            }]
+        }, {
+            "featureType": "administrative",
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "color": "#444444"
+            }]
+        }, {
+            "featureType": "landscape",
+            "elementType": "all",
+            "stylers": [{
+                "color": "#f2f2f2"
+            }]
+        }, {
+            "featureType": "poi",
+            "elementType": "all",
+            "stylers": [{
+                "visibility": "off"
+            }]
+        }, {
+            "featureType": "road",
+            "elementType": "all",
+            "stylers": [{
+                "saturation": -100
+            }, {
+                "lightness": 45
+            }]
+        }, {
+            "featureType": "road",
+            "elementType": "labels.text",
+            "stylers": [{
+                "color": "#ee3643"
+            }]
+        }, {
+            "featureType": "road",
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "color": "#ee3643"
+            }]
+        }, {
+            "featureType": "road",
+            "elementType": "labels.text.stroke",
+            "stylers": [{
+                "color": "#ee3643"
+            }]
+        }, {
+            "featureType": "road.highway",
+            "elementType": "all",
+            "stylers": [{
+                "visibility": "simplified"
+            }]
+        }, {
+            "featureType": "road.arterial",
+            "elementType": "labels.icon",
+            "stylers": [{
+                "visibility": "off"
+            }]
+        }, {
+            "featureType": "transit",
+            "elementType": "all",
+            "stylers": [{
+                "visibility": "off"
+            }]
+        }, {
+            "featureType": "water",
+            "elementType": "all",
+            "stylers": [{
+                "color": "#32425c"
+            }, {
+                "visibility": "on"
+            }]
+        }]
+    };
+
+    var mapElement = document.getElementById('map');
+
+    var image1 = new google.maps.MarkerImage(
+        'img/marker1.png',
+        new google.maps.Size(50, 50),
+        new google.maps.Point(0, 0),
+        new google.maps.Point(20, 20)
+    );
+
+
+    var map = new google.maps.Map(mapElement, mapOptions);
+
+    var marker1 = new google.maps.Marker({
+        draggable: false,
+        raiseOnDrag: false,
+        position: new google.maps.LatLng(59.9387942, 30.323083300000008),
+        icon: image1,
+        map: map,
+        title: 'Маленькая, но гордая дизайн-студия из Краснодара'
+    });
+
+}

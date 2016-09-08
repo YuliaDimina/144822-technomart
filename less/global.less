@@ -1,0 +1,311 @@
+body {
+    font-family: 'Cuprum', sans-serif;
+}
+
+.btn {
+    .btn();
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wraper {
+    max-width: 940px;
+    margin: auto;
+}
+
+ul,
+li {
+    display: inline-flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+//модальное окно ******************************************
+.modal-window {
+    width: 460px;
+    position: absolute;
+    padding: 51px 80px;
+    padding-right: 90px;
+    padding-bottom: 100px;
+    top: 276px;
+    left: 50%;
+    margin-left: -325px;
+    background-color: #ffffff;
+    border-top: 7px solid @main-red;
+    box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.60);
+    z-index: 40;
+}
+
+.modal-window-close {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 0;
+    background-color: #ffffff;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.modal-window-close:hover {
+    background-color: @main-red;
+}
+
+.modal-window-close:active {
+    background-color: rgba(238, 54, 67, 0.34);
+}
+
+.modal-window form {
+    width: 460px;
+}
+
+.modal-window-close::before,
+.modal-window-close::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 8px;
+    width: 25px;
+    height: 6px;
+    background-color: @main-red;
+}
+
+.modal-window-close:hover::before,
+.modal-window-close:hover::after {
+    background-color: #ffffff;
+}
+
+.modal-window-close:before {
+    transform: rotate(45deg);
+}
+
+.modal-window-close:after {
+    transform: rotate(-45deg);
+}
+
+.modal-window div {
+    display: inline-block;
+    width: 220px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.modal-window div:first-child {
+    margin-right: 15px;
+}
+
+.modal-window form {
+    width: 460px;
+}
+
+.modal-letter-button {
+    position: absolute;
+    left: 0;
+    bottom: -65px;
+    border: 0;
+    padding: 10px 194px;
+    outline: 0;
+    text-transform: uppercase;
+    z-index: 50;
+}
+
+.modal-letter-button:hover {
+    background-color: #d6494d;
+}
+
+.modal-letter-button:active {
+    padding-top: 7px;
+    background-color: #b63538;
+    border-top: 3px solid #9b2d30;
+}
+
+.modal-window label {
+    display: inline-block;
+    margin-bottom: 9px;
+    color: #000000;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    vertical-align: inherit;
+}
+
+.modal-window input,
+.modal-window textarea {
+    display: inline-block;
+    padding-left: 14px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-family: "PT Sans Regular", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 500;
+    vertical-align: inherit;
+}
+
+.modal-window input {
+    width: 203px;
+    margin-bottom: 21px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: 0;
+    border: 2px solid #d7dcde;
+    border-radius: 3px;
+    resize: vertical;
+    overflow: hidden;
+}
+
+.modal-window textarea {
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    width: 440px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: 0;
+    border: 2px solid #d7dcde;
+    border-radius: 3px;
+    resize: vertical;
+    overflow: hidden;
+}
+
+.footer-user-letter {
+    position: relative;
+}
+
+.footer-user-letter::after {
+    position: absolute;
+    content: "";
+    width: 630px;
+    height: 112px;
+    left: -80px;
+    bottom: -100px;
+    background-color: #f1f1f1;
+}
+
+.modal-window {
+    display: none;
+}
+
+.modal-window input:hover,
+.modal-window textarea:hover {
+    border: 2px solid #a2a9ac;
+}
+
+.modal-window input:focus,
+.modal-window textarea:focus {
+    border: 2px solid #56bffb;
+}
+
+.modal-window-show {
+    display: block;
+    animation: bounce 0.6s;
+}
+
+.modal-error {
+    animation: shake 0.6s;
+}
+
+@-webkit-keyframes bounce {
+    0% {
+        -webkit-transform: translateY(-2000px);
+        transform: translateY(-2000px);
+    }
+    70% {
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px);
+    }
+    90% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        -webkit-transform: translateY(-2000px);
+        transform: translateY(-2000px);
+    }
+    70% {
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px);
+    }
+    90% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes shake {
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        background-color: #ffeaeb;
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        background-color: #ffeaeb;
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+}
